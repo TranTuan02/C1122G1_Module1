@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp hạng học lực</title>
+</head>
+<body>
+<script>
+let diemkt=+prompt("NHập điểm kiểm tra");
+let diemgiuaki=+prompt("Nhập điểm thi giữa kì");
+let diemcuoiki=+prompt("Nhập điểm thi cuối kì");
+let avg=(diemkt+(diemgiuaki*2+diemcuoiki*3))/6
+    if (avg>8.5) {
+        alert("Học sinh giỏi")
+    }else if (avg<=8.4){
+        alert("hoc sinh kha")
+    }else if (avg<=6.4){
+        alert("hoc sinh trung binh")
+    }else {
+        alert(yeu)
+    }
+</script>
+</body>
+</html>
