@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phương trình bậc 2</title>
+</head>
+<body>
+<script>
+    let a = +prompt("nhập số a");
+    let b = +prompt("nhập số b");
+    let c = +prompt("nhập số c");
+    let x1;
+    let x2;
+    let x;
+    let delta = b * b - 4 * a * c;
+    if (delta < 0) {
+        alert("phương trình vô nghiệm");
+    } else if (delta == 0) {
+        x = (-b) / 2 * a;
+        alert("phương trình có ngiệm kép " + x);
+    } else {
+        x1=((-b)+Math.sqrt(delta))/(2*a);
+        x2=((-b)-Math.sqrt(delta))/(2*a);
+        alert("phương trình có hai nghiệm");
+    }
+
+</script>
+
+</body>
+</html>

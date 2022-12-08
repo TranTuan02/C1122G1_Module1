@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính lãi ngân hàng</title>
+</head>
+<body>
+<script>
+    let p=+prompt("số tiền vốn ban đầu");
+    let r=+prompt("lãi xuất ngân hàng");
+    let n=+prompt("số tiền lãi cộng dồn vào tiền gốc sau mỗi năm");
+    let t=+prompt("số năm gửi tiết kiệm");
+    let a;
+    a=p*Math.pow((1+(r/(n*100))),(n*t));
+    alert(" số tiền nhận được" +a);
+
+</script>
+
+</body>
+</html>

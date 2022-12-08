@@ -1,19 +1,19 @@
 function ChangeMoney() {
-    let FromCurrency=document.getElementById("From").value;
-    let ToCurrency=document.getElementById("To").value;
-    let Amount = document.getElementById("Amount").value;
-    alert("amount la "+Amount)
-    alert("from la "+FromCurrency)
-    alert("to la "+ToCurrency)
-    let result = 0;
-    if (FromCurrency == "USD" && ToCurrency == "VND") {
-        result = " result " + (Amount * 23000) + "VND";
-    } else if (FromCurrency == "VND" && ToCurrency == "USD") {
-        result = "result" + (Amount / 23000) + "USD";
-    } else if (FromCurrency == "VND") {
-        result = "result" + Amount + "VND";
-    } else if (FromCurrency == "USD") {
-        result = "result" + Amount + "USD";
+    let fromCurrency=document.getElementById("from").value;
+    let toCurrency=document.getElementById("to").value;
+    let amount=document.getElementById("amount").value;
+    alert("amount la "+amount);
+    alert("from la "+fromCurrency);
+    alert("to la "+toCurrency);
+    let result ;
+    if (fromCurrency == "USD" && toCurrency == "VND") {
+        result = " result " + (amount * 23000) + "VND";
+    } else if (fromCurrency == "VND" && toCurrency == "USD") {
+        result = "result" + (amount / 23000) + "USD";
+    } else if (fromCurrency == "VND") {
+        result = "result" + amount + "VND";
+    } else if (fromCurrency == "USD") {
+        result = "result" + amount + "USD";
     }
         document.getElementById("kQ").innerText = result;
 }
