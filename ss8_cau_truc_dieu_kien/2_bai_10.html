@@ -6,28 +6,27 @@
 </head>
 <body>
 <script>
-    let kwh=+prompt("nhập số điện đã dùng");
+    let kwh = +prompt("nhập số điện đã dùng");
     let money;
-    if( kwh>400)
-    {
-        money=kwh*2.587;
-        alert("số tiền điện"+money);
-    }else if (kwh>300){
-        money=kwh*2.503;
-        alert("số tiền điện"+money);
-    }else if (kwh>200){
-        money=kwh*2.241;
-        alert("số tiền điện"+money);
-    }else  if (kwh>100){
-        money=kwh*1.786;
-        alert("số tiền điện"+money);
-    }else if (kwh>50){
-        money=kwh*1.533;
-        alert("số tiền điện"+money);
-    }else if (kwh>=0){
-        money=kwh*1.484;
-        alert("số tiền điện"+money);
-    }else {
+    if (kwh > 400) {
+        money = kwh * 2.587;
+        alert("số tiền điện" + money);
+    } else if (kwh > 300) {
+        money = kwh * 2.503;
+        alert("số tiền điện" + money);
+    } else if (kwh > 200) {
+        money = kwh * 2.241;
+        alert("số tiền điện" + money);
+    } else if (kwh > 100) {
+        money = kwh * 1.786;
+        alert("số tiền điện" + money);
+    } else if (kwh > 50) {
+        money = kwh * 1.533;
+        alert("số tiền điện" + money);
+    } else if (kwh >= 0) {
+        money = kwh * 1.484;
+        alert("số tiền điện" + money);
+    } else {
         alert(" số điện không hợp lệ");
     }
 </script>

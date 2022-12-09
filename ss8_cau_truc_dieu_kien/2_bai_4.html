@@ -9,7 +9,12 @@
     let a = +prompt("Nhập độ dài cạnh a :");
     let b = +prompt("nhập độ dài cạnh b :");
     let S = a * b;
-    document.write("Diện tích hình chữ nhật là :" + S);
+    if (a > 0 && b > 3) {
+        alert(" Diện tích hình chữ nhật là :" + S)
+    } else {
+        alert(" Độ dài không hợp lệ ");
+    }
+
 </script>
 </body>
 </html>

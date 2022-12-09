@@ -6,9 +6,14 @@
 </head>
 <body>
 <script>
-    let a =+prompt("nhập độ dài cạnh a");
-    let S=a*a;
-    document.write("Diện tích hình vuông là : " + S);
+    let a = +prompt("nhập độ dài cạnh a");
+    let S = a * a;
+    if (a > 0) {
+        alert("Diện tích hình vuông là : " + S);
+    } else {
+        alert(" Cạnh a không hợp lệ");
+    }
+
 </script>
 </body>
 </html>

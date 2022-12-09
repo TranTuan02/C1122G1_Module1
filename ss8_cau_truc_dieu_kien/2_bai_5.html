@@ -6,10 +6,15 @@
 </head>
 <body>
 <script>
-    let a=+prompt("Nhập độ dài cạnh kề a :");
-    let b=+prompt("Nhập độ dài cạnh kề b : ");
-    let S=(a*b)/2;
-    alert("diện tích tam giác vuông là :" + S );
+    let a = +prompt("Nhập độ dài cạnh kề a :");
+    let b = +prompt("Nhập độ dài cạnh kề b : ");
+    let S = (a * b) / 2;
+    if (a > 0 && b > 0) {
+        alert("diện tích tam giác vuông là :" + S);
+    } else {
+        alert(" độ dài không hợp lệ");
+    }
+
 </script>
 </body>
 </html>
