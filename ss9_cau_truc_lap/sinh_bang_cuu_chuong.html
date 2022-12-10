@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sinh bảng cửu chương</title>
+</head>
+<body>
+<script>
+    let i;
+    let j;
+    let cuuChuong;
+    cuuChuong = '<table border="2" cellspacing="5" cellpadding="3" style="color: red">';
+    for (i = 0; i <= 10; i++) {
+        cuuChuong = cuuChuong + '<tr>';
+        for (j = 2; j <= 10; j++) {
+            cuuChuong = cuuChuong + '<td>' + j + "x" + i + "=" + j * i +'</td>';
+        }
+        cuuChuong = cuuChuong + '</tr>';
+    }
+    cuuChuong = cuuChuong + '</table>';
+    document.write(cuuChuong);
+
+</script>
+
+</body>
+</html>

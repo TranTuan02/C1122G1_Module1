@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị các số nguyên tố đầu tiên</title>
+</head>
+<body>
+<script>
+    let count = 0;
+    let number = 2;
+    let countOfPrime = 0;
+    while (countOfPrime < 20) {
+        if (number == 2 || number == 3) {
+            alert("số nguyên tố là" + number);
+            number++;
+            countOfPrime++;
+            continue;
+        }
+        for (let i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i === 0) {
+                count++;
+                break;
+            }
+        }
+        if (count == 0) {
+            alert(" số nguyên tố là : " + number);
+            countOfPrime++;
+        } else {
+            alert(" không phải là số nguyên tố");
+
+        }
+        count = 0;
+        number++;
+
+    }
+
+</script>
+</body>
+</html>
