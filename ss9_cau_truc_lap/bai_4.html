@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 4</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let b = 1;
+    let c = a + b;
+    let chiaHet5;
+    let result;
+    for (let i = 0; i < 20; i++) {
+        a = b;
+        b = c;
+        c = a + b;
+        result += c.toString() + " ";
+
+        if (c % 5 == 0) {
+            chiaHet5 = c;
+            break;
+        }
+    }
+    document.write("Số chia hết cho 5 trong dãy là : " + chiaHet5);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 6</title>
+</head>
+<body>
+<script>
+    let count=0;
+    let tong=0;
+    let daySo=" ";
+    for ( let i=1; ;i++){
+        if (i%7==0) {
+            daySo += i + " ";
+            count++;
+            tong += i;
+        }
+        if (count==30){
+            break;
+        }
+    }
+    document.write(daySo+"<br>");
+    document.write("Tổng 30 số đầu tiên chia hết cho 7 là : "+ tong);
+</script>
+
+</body>
+</html>
