@@ -2,9 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bài tập 8</title>
 </head>
 <body>
-
+<script>
+    let n = +prompt("Nhập khoảng cách muốn đoán số");
+    let e = Math.floor(Math.random() * n);
+    for (let i = 1; i <= 3; i++) {
+        let soDoan = +prompt("Nhập số bạn đoán");
+        if (e == soDoan) {
+            alert("bạn đã đoán đúng");
+            break;
+        } else if (i < 3) {
+            if (soDoan < e) {
+                alert("bạn đoán sai rồi , lớn hơn chút nữa");
+            } else if (soDoan > e) {
+                alert("bạn đoán sai rồi , nhỏ hơn chút nữa");
+            } else if (i >= 3) {
+                alert("đã hết số lần để đoán");
+            }
+        }
+    }
+</script>
 </body>
 </html>
