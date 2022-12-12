@@ -7,8 +7,8 @@
 <body>
 <script>
     let n = prompt("Nhập số nguyên bất kì");
-    let giaiThua;
-    while (let i = 1;i >= n;i++){
+    let giaiThua=1;
+    for (let i = 1;i <= n;i++){
         giaiThua = giaiThua * i;
     }
     document.write("giai thừa của số là : " + giaiThua);
