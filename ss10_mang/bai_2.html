@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="bai2"></div>
+<script>
+    let arr = [];
+    let dem = 1;
+    let max;
+    for (let i = 1; i <= 10; i++) {
+        arr[i] = +prompt(" nhập số i");
+        if (i === 1) {
+            max = +arr[1];
+        } else if (+arr[i] > max) {
+            max = +arr[i];
+            dem = i;
+        }
+    }
+    document.getElementById("bai2").innerHTML = "số lớn nhất trong mảng" + max + "vị trí của phần tử" + dem;
+</script>
+</body>
+</html>

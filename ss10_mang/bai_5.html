@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 5</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let n = +prompt("nhập số lượng số nguyên âm ");
+    let count = 0;
+    for (let i = 0; i < n; i++) {
+        arr[i] = +prompt(" nhập số lượng phần tử i")
+        if (arr[i] < 0) {
+            count++;
+        }
+    }
+    alert(" số lượng số nguyên âm là :" + count);
+</script>
+
+</body>
+</html>

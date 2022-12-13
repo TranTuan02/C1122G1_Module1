@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 7</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        arr[i] = +prompt("nhập các phần tử vào mảng ");
+    }
+    let soCanXet = +prompt("nhâp phần tử cần xét trong mảng");
+    for (let i = 0; i < 10; i++) {
+        if (soCanXet === arr[i]) {
+            for (j = i; j < arr.length - 1; j++) {
+                arr[j] = arr[j + 1];
+                arr[arr.length - 1] = 0;
+            }
+        }
+    }
+        alert("mảng sau khi được xử lí :" + arr);
+</script>
+
+
+</body>
+</html>

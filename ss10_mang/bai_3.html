@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập 3</title>
+</head>
+<body>
+<script>
+    let n = +prompt("nhập số nguyên");
+    let arr = [];
+    let max;
+    let sum = 0;
+    let average;
+    for (let i = 0; i < n; i++) {
+        arr[i] = +prompt(" nhập số " + i);
+        max = arr[0];
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+        sum += arr[i];
+    }
+    average = sum / n;
+    alert("số lớn nhất trong mảng là " + max + "giá trị trung bình " + average);
+</script>
+</body>
+</html>
