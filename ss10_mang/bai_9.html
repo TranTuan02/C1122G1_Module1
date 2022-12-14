@@ -6,7 +6,16 @@
 </head>
 <body>
 <script>
-
+    let arr1 = [];
+    let arr2 = [];
+    for (let i = 0; i < 10; i++) {
+        arr1[i] = prompt("nhập các phần tử của mảng 1 ");
+    }
+    for (let i = 0; i < 10; i++) {
+        arr2[i] = prompt("nhập các phần tử của mảng 2");
+    }
+    let arr3 = [...arr1, ...arr2];
+    alert("mảng sau khi nối là" + arr3);
 </script>
 </body>
 </html>

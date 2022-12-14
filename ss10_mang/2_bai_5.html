@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 5</title>
+</head>
+<body>
+<script>
+    let chuoi1 = prompt("nhập số phần tử chuỗi 1");
+    let chuoi2 = prompt("nhập số phần tử chuỗi 2");
+    let mang1 = chuoi1.split("");
+    let mang2 = chuoi2.split("");
+    let count = 1;
+    if (mang1.length === mang2.length) {
+        for (i = 0; i < chuoi2.length; i++) {
+            if (mang1[i] = mang2[i]) {
+                count++;
+            } else {
+                alert("hai chuỗi không giống nhau");
+                break;
+            }
+            if (count === mang2.length) {
+                alert("hai chuỗi giống nhau");
+            }
+        }
+    } else {
+        alert("hai mảng không giống nhau");
+    }
+</script>
+
+</body>
+</html>
