@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 3</title>
+</head>
+<body>
+<script>
+    let str = prompt("Nhập vào một chuỗi bất kì");
+    let result = " ";
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === str[i].toUpperCase()) {
+            result = result + str[i].toLowerCase();
+        } else {
+            result = result + str[i].toUpperCase();
+        }
+    }
+    document.write(result);
+</script>
+</body>
+</html>
