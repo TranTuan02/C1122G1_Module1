@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 2</title>
+</head>
+<body>
+<script>
+    const pi = 3.14
+    let r = +prompt("nhập bán kính hình tròn : ");
+    let s = area(r, pi);
+    let c = circle(r, pi);
+    alert("Diện tích hình tròn là : " + s);
+    alert("Chu vi hình tròn là : " + c);
+
+    function area(r, pi) {
+        let s = r * r * pi;
+        return s;
+
+    }
+
+    function circle(r, pi) {
+        let c = 2 * r * pi;
+        return c;
+
+    }
+</script>
+
+</body>
+</html>
