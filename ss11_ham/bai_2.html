@@ -6,13 +6,13 @@
 </head>
 <body>
 <script>
-        let temp= +prompt(" nhập số cần tăng giá trị : ")
-        let number=tangGiaTri(temp)
-        alert("")
-        return number + 1;
-    }
+    let number = +prompt(" nhập số cần tăng giá trị : ")
 
-    alert("tangGiaTri")
+    function tangGiaTri() {
+        number++;
+        return number;
+    }
+    alert("số sau khi tăng giá trị là : " + tangGiaTri());
 </script>
 </body>
 </html>
