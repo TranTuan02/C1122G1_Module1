@@ -9,20 +9,12 @@
     let a = prompt("nhập từ muốn dịch");
     let tiengV = ["anh", "yêu", "em", "rất", " nhiều"];
     let tiengA = ["I", "love", "you", "so", " much"];
-    let numb = 0;
     for (let i = 0; i < tiengV.length; i++) {
         if (a === tiengV[i]) {
-            numb = i;
-            for (let j = 0; j < tiengA.length; j++) {
-                if (j == numb) {
-                    document.write(tiengA[j])
-                    break;
-                }
-            }
+            document.write(tiengA[i]);
+            break;
         }
     }
-
 </script>
-
 </body>
 </html>

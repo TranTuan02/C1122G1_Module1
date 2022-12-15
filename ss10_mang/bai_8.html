@@ -7,17 +7,21 @@
 <body>
 <script>
     let arr = [];
-    let n = +prompt("nhập số phần tử trong mảng");
-    for (let i = 0; i < n; i++) {
-        arr[i] = +prompt("  nhập phần tử " + i);
+    let min = 0;
+    for (let i = 0; i < 10; i++) {
+        arr[i] = +prompt(" nhập phần tử vào mảng " + i);
     }
-    for (let i = 0; i < arr.length; i++) {
-        arr.sort(function (a, b) {
-            return a - b;
-
-        });
+    document.write("mảng ban đầu là :[ " + arr + "]");
+    for (let i = 0; i < arr.length - 1; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] < arr[j]) {
+                min = arr[i];
+                arr[i] = arr[j];
+                arr[j] = min;
+            }
+        }
     }
-    alert(arr);
+    document.write("mảng sau khi được sắp xếp là :  [" + arr + "]");
 </script>
 
 </body>

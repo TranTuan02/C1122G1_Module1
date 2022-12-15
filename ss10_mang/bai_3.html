@@ -6,21 +6,23 @@
 </head>
 <body>
 <script>
-    let n = +prompt("nhập số nguyên");
     let arr = [];
-    let max;
     let sum = 0;
-    let average;
-    for (let i = 0; i < n; i++) {
-        arr[i] = +prompt(" nhập số " + i);
-        max = arr[0];
+    let max;
+    let avg;
+    let doDai = +prompt("nhập độ dài mảng ")
+    for (let i = 0; i < doDai; i++) {
+        arr[i] = +prompt('nhập số phần tử i: ');
+    }
+    max = arr[0];
+    for (let i = 0; i < arr.length; i++) {
         if (arr[i] > max) {
             max = arr[i];
         }
-        sum += arr[i];
+        sum = sum + arr[i];
     }
-    average = sum / n;
-    alert("số lớn nhất trong mảng là " + max + "giá trị trung bình " + average);
+    avg = sum / doDai;
+    document.write('Số lớn nhất là: ' + max + 'trung bình ' + avg);
 </script>
 </body>
 </html>

@@ -11,8 +11,16 @@
     for (let i = 0; i < n; i++) {
         arr[i] = +prompt("nhập số lượng phần tử trong mảng" + i);
     }
-    alert("mảng trước khi chuyển đổi là : " + arr);
-    alert("mảng sau khi chuyển đổi ngược lại là :" + arr.reverse());
+    let first = 0;
+    let last = arr.length - 1;
+    while (first < last) {
+        let a = arr[first];
+        arr[first] = arr[last];
+        arr[last] = a;
+        first++;
+        last--;
+    }
+    alert("mảng sau khi chuyển đổi là : " + arr);
 </script>
 </body>
 </html>
