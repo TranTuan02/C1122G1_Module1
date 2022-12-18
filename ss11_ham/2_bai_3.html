@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 3</title>
+</head>
+<body>
+<script>
+    let n = +prompt("nhập số n : ");
+    document.write(" Giai thừa là : " + tinhGiaiThua(n));
+
+    function tinhGiaiThua(n) {
+        let result = 1;
+        for (let i = 1; i <= n; i++) {
+            result = result * i;
+        }
+        return result;
+    }
+</script>
+
+</body>
+</html>

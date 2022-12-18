@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 8</title>
+</head>
+<body>
+<script>
+    let n = +prompt("nhập độ dài của mảng : ");
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+        arr[i] = +prompt("nhập phần tử : ");
+    }
+    alert(daoMang(arr));
+
+    function daoMang(arr) {
+        let a = 0;
+        let b = n - 1;
+        let temp;
+        while (a < b) {
+            temp = arr[a];
+            arr[a] = arr[b];
+            arr[b] = temp;
+            a++;
+            b--;
+        }
+        return arr;
+    }
+</script>
+
+</body>
+</html>
