@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mô tả hình chữ nhật</title>
+</head>
+<body>
+<canvas id="myCanvas" width="200" height="100" style="border: red solid"></canvas>
+<button onclick="handleRectangle()">Draw</button>
+<script>
+    class Rectangle {
+        constructor(width, height) {
+            this.width = width;
+            this.height = height;
+
+        }
+
+        getAcreage() {
+            return this.height * this.width;
+        }
+
+        getPerimeter() {
+            return (this.width + this.height) * 2;
+        }
+
+        drawRectangle() {
+            let canvas = document.getElementById("myCanvas");
+            let ctx = canvas.getContext("2d");
+            ctx.beginPath();
+            ctx.strokeStyle = "red";
+            ctx.strokeRect(10, 10, this.height, this.width);
+            ctx.stroke();
+        }
+    }
+
+    function handleRectangle() {
+        let width = +prompt("nhập chiều rộng hình chữ nhật : ");
+        let hight = +prompt("nhập chiều dài hình chữ nhật : ");
+        let rectangle = new Rectangle(width, hight);
+        rectangle.drawRectangle();
+        alert("diện tích hình chữ nhật là : " + rectangle.getAcreage());
+        alert("Chu vi hình chữ nhật là : " + rectangle.getPerimeter());
+
+    }
+</script>
+
+</body>
+</html>
