@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tam giác cân đặc</title>
+</head>
+<body>
+<script>
+    let i;
+    let j;
+    let k;
+    let h = +prompt("nhập chiều cao tam giác cân : ");
+    let result = " ";
+    for (i = 1; i <= h; i++) {
+        for (j = 1; j <= h - 1; j++) {
+            result = result + "&ensp;";
+        }
+    }
+    for (k = 1; k <= 2 * i - 1; k++) {
+        result = result + "*";
+    }
+    for (i = 1; i <= h; i++) {
+        for (j = 1; j <= h - 1; j++) {
+            result = result + "&ensp;";
+        }
+    }
+    document.write(result);
+</script>
+
+</body>
+</html>

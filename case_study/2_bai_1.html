@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính lương thực</title>
+</head>
+<body>
+<script>
+    let thuNhap = +prompt("nhập số tiền lương nhân viên : ");
+    let soThue;
+    let luongRong;
+    if (thuNhap >= 15000000) {
+        soThue = thuNhap * (20 / 100);
+        alert("số thuế đóng : " + soThue);
+    } else if (7000000 < thuNhap < 15000000) {
+        soThue = thuNhap * (10 / 100);
+        alert("số thuế đóng : " + soThue);
+    } else if (thuNhap < 7000000) {
+        soThue = thuNhap * (5 / 100);
+        alert("số thuế đóng : " + soThue);
+    }
+    luongRong = thuNhap - soThue;
+    alert(" số tiền lương thực mà nhân viên được nhận là :" + luongRong);
+</script>
+
+</body>
+</html>

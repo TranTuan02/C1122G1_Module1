@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let i;
+    let j;
+    let result = " ";
+    let a = +prompt("nhập chiều dài hình chữ nhật : ");
+    let b = +prompt("nhập chiều rộng hình chữ nhật : ")
+    for (let i = 1; i <= a; i++) {
+        if (i === 1 || i === a) {
+            for (j = 1; j <= b; j++) {
+                result = result + "*";
+            }
+            result = result + "<br>";
+        } else {
+            result = result + "*";
+            for (j = 1; j <= b - 2; j++) {
+                result = result + "&ensp;";
+
+            }
+            result = result + "*" + "<br>";
+        }
+    }
+    document.write(result);
+</script>
+</body>
+</html>

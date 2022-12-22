@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 2</title>
+</head>
+<body>
+<script>
+    let arr1 = [];
+    let arr2 = [];
+    let arr3 = [];
+    let a;
+    let n = +prompt(" Nhập số phần tử bảng 1 : ");
+    for (let i = 0; i < n; i++) {
+        arr1[i] = +prompt(" Nhập các phần tử mảng 1 ");
+    }
+    let m = +prompt(" nhập số phần tử mảng 2 : ");
+    for (let i = 0; i < m; i++) {
+        arr2[i] = +prompt("nhập  các phần tử mảng 2");
+        a = arr1.indexOf(arr2[i]);
+        if (a == -1) {
+            arr3.push(arr2[i]);
+        }
+    }
+    document.write(arr3);
+</script>
+
+</body>
+</html>

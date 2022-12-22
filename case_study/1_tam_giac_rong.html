@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tam giác vuông cân rỗng</title>
+</head>
+<body>
+<script>
+    let h = +prompt("nhập chiều cao hình tam giác : ");
+    let i;
+    let j;
+    let result = " ";
+    for (i = 1; i <= h; i++) {
+        for (let j = 1; j <= i; j++) {
+            if (j === 1 || j === i || i === h) {
+                result = result + "*";
+
+            } else {
+                result = result + "&ensp;";
+
+            }
+        }
+        result = result + "<br>";
+    }
+    document.write(result);
+
+</script>
+
+</body>
+</html>

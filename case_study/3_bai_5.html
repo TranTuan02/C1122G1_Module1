@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+</head>
+<body>
+<script>
+    let flag = true
+    do {
+        let menu = prompt("1(cafe), 2(cam vắt), 3(nước ép cà rốt),4(nước ép cà chua), 5( nước lọc), 6(nước dừa), 7(thoát gọi món)");
+
+        switch (menu) {
+            case "1":
+                let cafe = prompt("cafe = 15000 ngìn đồng" + " số lượng muốn gọi là : ");
+                cafe = cafe * 15000;
+                alert(cafe + "VND");
+                break;
+            case "2":
+                let camVat = prompt("nước cam = 20000 ngìn đồng" + " số lượng muốn gọi là : ");
+                camVat = camVat * 20000;
+                alert(camVat + "VND");
+                break;
+            case "3":
+                let caRot = prompt("Cà rốt = 22000 ngìn đồng" + " số lượng muốn gọi là : ");
+                caRot = caRot * 22000;
+                alert(caRot + "VND");
+                break;
+            case "4":
+                let caChua = prompt("Cà chua = 25000 ngìn đồng" + " số lượng muốn gọi là : ");
+                caChua = caChua * 25000;
+                alert(caChua + "VND");
+                break;
+            case "5":
+                let nuocLoc = prompt("Nước lọc = 10000 ngìn đồng" + " số lượng muốn gọi là : ");
+                nuocLoc = nuocLoc * 10000;
+                alert(nuocLoc + "VND");
+                break;
+            case "6":
+                let nuocDua = prompt("Nước dừa = 30000 ngìn đồng" + " số lượng muốn gọi là : ");
+                nuocDua = nuocDua * 30000;
+                alert(nuocDua + "VND");
+                break;
+            case 7:
+
+                flag = false;
+        }
+
+    } while (flag)
+</script>
+
+</body>
+</html>
