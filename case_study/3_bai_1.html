@@ -6,20 +6,18 @@
 </head>
 <body>
 <script>
-    let arr = [];
-    let n = +prompt(" Nhập các phần tử mảng 1 ");
+    let a = [];
+    let b=[]
+    let sum=0;
+    let n = +prompt(" số các phần tử mảng 1 ");
     for (let i = 0; i < n; i++) {
-        arr[i] = +prompt("nhập giá trị mảng : ");
+        a[i] = +prompt("nhập giá trị mảng : ");
     }
-    let newArr = [];
-    let sum = 0;
-    for (let i = 0; j < n; i++) {
-        for (let j = 0; j <= i; j++){
-            sum += arr1[i];
-            newArr.push(sum);
+        for (let j = 0; j <a.length; j++) {
+            sum = sum+ a[j];
+            b[j]=sum;
     }
-    }
-    alert(newArr);
+    alert(b);
 </script>
 
 </body>
