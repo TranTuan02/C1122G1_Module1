@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số nguyên tố</title>
+</head>
+<body>
+<script>
+    let m = +prompt("nhập số hàng của mảng : ");
+    let n = +prompt("nhập số cột của mảng");
+    let arr = [];
+    for (let i = 0; i < m; i++) {
+        arr[i] = [];
+    }
+    for (let i = 0; i < m; i++) {
+        for (let j = 0; j < n; j++) {
+            arr[i][j] = +prompt(" nhập các phần tử của mảng : ");
+
+        }
+    }
+    document.write(" số lượng số nguyên tố có trong mảng : " + countPrime(arr));
+    document.write(" các số có trong mảng là : " + listOfPrime(arr));
+
+    function isPrime(num) {
+        let flag = true;
+        if (num === 1) {
+            flag = false;
+        } else {
+            for (let i = 2; i <= Math.sqrt(num); i++) {
+                if (num % i === 0) {
+                    flag = false;
+                    break;
+                }
+            }
+        }
+        return flag;
+
+    }
+
+    function countPrime(array) {
+        let count = 0;
+        for (let i = 0; i < array.length; i++) {
+            for (let j = 0; j < array[i].length; j++) {
+                if (isPrime(array[i][j])) {
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
+
+    function listOfPrime(array) {
+        let prime = "";
+        for (let i = 0; i < array.length; i++) {
+            for (let j = 0; j < array[i].length; j++) {
+                if (isPrime(array[i][j])) {
+                    prime += array[i][j] + ",";
+                }
+            }
+        }
+        return prime;
+    }
+</script>
+
+</body>
+</html>

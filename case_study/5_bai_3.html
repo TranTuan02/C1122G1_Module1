@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>giá trị nhỏ nhất và lớn nhất trong mảng</title>
+</head>
+<body>
+<script>
+    let m = +prompt(" Nhập số hàng của mảng");
+    let n = +prompt("Nhập số cột của mảng");
+    let arr = [];
+    for (let i = 0; i < m; i++) {
+        arr[i] = [];
+    }
+    for (let i = 0; i < m; i++) {
+        for (let j = 0; j < n; j++) {
+            arr[i][j] = +prompt("Nhập các phần tử của mảng");
+        }
+    }
+    document.write("số lớn nhất trong mảng là : " + isMax(arr) + "<br>");
+    document.write("số bé nhất trong mảng là : " + isMin(arr));
+
+    function isMax(array) {
+        let max = array[0][0];
+        for (let i = 0; i < array.length; i++) {
+            for (let j = 0; j < array[i].length; j++) {
+                if (array[i][j] > max) {
+                    max = array[i][j];
+                }
+            }
+        }
+        return max;
+    }
+
+    function isMin(array) {
+        let min = array[0][0];
+        for (let i = 0; i < array.length; i++) {
+            for (let j = 0; j < array[i].length; j++) {
+                if (array[i][j] < min) {
+                    min = array[i][j];
+                }
+            }
+        }
+        return min;
+    }
+</script>
+</body>
+</html>

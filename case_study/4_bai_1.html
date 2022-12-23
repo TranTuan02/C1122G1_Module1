@@ -6,8 +6,30 @@
 </head>
 <body>
 <script>
+    function checkString(str) {
+        let a = str.toLowerCase().split(" ");
+        for (let i = 0; i < a.length; i++) {
+            a[i] = a[i].charAt(0).toUpperCase() + a[i].substring(1);
+        }
+        return a.join(" ");
+    }
+
+    function max(arr){
+        let max = arr[0];
+        for (let j = 0; j < arr.length; j++) {
+            if (arr[j] > max) {
+                max = arr[j];
+            }
+        }
+        return max;
+    }
+
+    let a = prompt("nhập chuỗi muốn chuyển đổi là : ");
+    document.write("chuỗi trước khi chuyển đổi là :" + a + "<br>");
+    document.write("chuỗi sau khi chuyển đổi là : " + checkString(a) + "<br>");
+    let array = checkString(a).split(" ");
+    document.write(" từ dài nhất trong chuỗi là : " + max(array));
 
 </script>
-
 </body>
 </html>
